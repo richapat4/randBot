@@ -3,11 +3,14 @@ import os
 import pandas as pd
 import random 
 
+
+
 def readCsv(string):
     df = pd.read_csv("RandomFacTgeneratorNew.csv",encoding='utf-8')
     y = df[string].values.tolist()
     return y[random.randint(0, len(y) - 1)]
 
+#POOOOOO
 
 # def main():
 #     readCsv('Science')
